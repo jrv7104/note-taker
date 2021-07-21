@@ -4,8 +4,8 @@ let realPath = null;
 
 export default {
     async index() {
-        return JSON.parse(await fs.readFile(`${realPath)/app/db/db.json`, "utf8"));
-};
+        return JSON.parse(await fs.readFile(`${realPath}/app/db/db.json`, "utf8"));
+},
 
 async create(newNote {
     const currentNotes = await this.index();
